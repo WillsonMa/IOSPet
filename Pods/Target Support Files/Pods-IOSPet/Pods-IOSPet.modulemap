@@ -1,0 +1,6 @@
+framework module Pods_IOSPet {
+  umbrella header "Pods-IOSPet-umbrella.h"
+
+  export *
+  module * { export * }
+}
