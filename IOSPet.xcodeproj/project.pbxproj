@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2938976DC91FDDB24BF0FABC /* Pods_IOSPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD5225BEE2568B5E4B7526F /* Pods_IOSPet.framework */; };
 		8A2913676972E67DCF30AFA2 /* Pods_IOSPetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2C6DF136FEEFD962457268 /* Pods_IOSPetUITests.framework */; };
+		A0041F821EAE979700A581A9 /* NicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F811EAE979700A581A9 /* NicerView.swift */; };
+		A0041F851EAE990A00A581A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F841EAE990A00A581A9 /* Constants.swift */; };
+		A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F861EAE9BC500A581A9 /* RoundBtn.swift */; };
+		A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038D8B41EB308CD00E4440F /* Textfield.swift */; };
 		A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19D71EAD53100050A3FF /* AppDelegate.swift */; };
 		A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19D91EAD53100050A3FF /* SignInVC.swift */; };
 		A0CD19DD1EAD53100050A3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD19DB1EAD53100050A3FF /* Main.storyboard */; };
@@ -45,6 +49,10 @@
 		4FB517AB847BAC1600C85FA8 /* Pods-IOSPetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetTests/Pods-IOSPetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53EEB12808204C931DE21398 /* Pods-IOSPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetTests/Pods-IOSPetTests.release.xcconfig"; sourceTree = "<group>"; };
 		9790BB6E039A152EC0D3972F /* Pods-IOSPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPet/Pods-IOSPet.debug.xcconfig"; sourceTree = "<group>"; };
+		A0041F811EAE979700A581A9 /* NicerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicerView.swift; sourceTree = "<group>"; };
+		A0041F841EAE990A00A581A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0041F861EAE9BC500A581A9 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		A038D8B41EB308CD00E4440F /* Textfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Textfield.swift; sourceTree = "<group>"; };
 		A0CD19D41EAD53100050A3FF /* IOSPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD19D71EAD53100050A3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CD19D91EAD53100050A3FF /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -91,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0041F831EAE98F300A581A9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A0041F841EAE990A00A581A9 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		A0CD19CB1EAD53100050A3FF = {
 			isa = PBXGroup;
 			children = (
@@ -116,9 +132,10 @@
 		A0CD19D61EAD53100050A3FF /* IOSPet */ = {
 			isa = PBXGroup;
 			children = (
+				A0041F831EAE98F300A581A9 /* Util */,
+				A0F12EDE1EAD5C0900CCAA86 /* Model */,
 				A0F12EE01EAD5C1A00CCAA86 /* Controller */,
 				A0F12EDF1EAD5C1300CCAA86 /* View */,
-				A0F12EDE1EAD5C0900CCAA86 /* Model */,
 				A0CD19D71EAD53100050A3FF /* AppDelegate.swift */,
 				A0CD19DB1EAD53100050A3FF /* Main.storyboard */,
 				A0CD19DE1EAD53100050A3FF /* Assets.xcassets */,
@@ -157,6 +174,9 @@
 		A0F12EDF1EAD5C1300CCAA86 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0041F811EAE979700A581A9 /* NicerView.swift */,
+				A0041F861EAE9BC500A581A9 /* RoundBtn.swift */,
+				A038D8B41EB308CD00E4440F /* Textfield.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -475,8 +495,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0041F821EAE979700A581A9 /* NicerView.swift in Sources */,
+				A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */,
+				A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
 				A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */,
+				A0041F851EAE990A00A581A9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = willsonMa.IOSPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -651,6 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = willsonMa.IOSPet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
