@@ -59,6 +59,9 @@
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" red="0.11247166450777202" green="0.09125345119016251" blue="0.093495576872483555" alpha="0.79541703345070414" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="SignTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP8-Xa-AZC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -135,6 +138,10 @@
                             <constraint firstAttribute="trailing" secondItem="hUy-bT-kgm" secondAttribute="trailing" id="u8F-Sn-e6g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EmailField" destination="oWt-p9-u88" id="1Jk-19-mWg"/>
+                        <outlet property="PasswordField" destination="uyf-pg-Mrv" id="3ke-ag-MSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
