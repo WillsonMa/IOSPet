@@ -61,7 +61,6 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="SignTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bP8-Xa-AZC"/>
-                                                    <segue destination="VN9-7l-wJS" kind="show" id="ggE-yc-NMP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -142,6 +141,7 @@
                     <connections>
                         <outlet property="EmailField" destination="oWt-p9-u88" id="1Jk-19-mWg"/>
                         <outlet property="PasswordField" destination="uyf-pg-Mrv" id="3ke-ag-MSG"/>
+                        <segue destination="VN9-7l-wJS" kind="show" identifier="GoHome" id="t9C-az-HLe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,7 +151,7 @@
         <!--HomePage-->
         <scene sceneID="d4K-Od-yLh">
             <objects>
-                <viewController title="HomePage" id="VN9-7l-wJS" sceneMemberID="viewController">
+                <viewController title="HomePage" id="VN9-7l-wJS" customClass="PostVC" customModule="IOSPet" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3D3-1x-lCC"/>
                         <viewControllerLayoutGuide type="bottom" id="le4-zX-07u"/>
@@ -231,12 +231,15 @@
                                     <color key="titleShadowColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="0.89970290490000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="e0h-3r-rNl"/>
+                                    <action selector="singOutTapped:" destination="VN9-7l-wJS" eventType="touchUpInside" id="Dcx-VN-zGu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="GoSignIn" id="PO4-jH-BEl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08x-FC-SXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -552,6 +555,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ggE-yc-NMP"/>
+        <segue reference="t9C-az-HLe"/>
     </inferredMetricsTieBreakers>
 </document>
