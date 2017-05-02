@@ -13,7 +13,7 @@ class Textfield: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        layer.borderColor = UIColor(red: SHADOW_GRAY, green: SHADOW_GRAY, blue: SHADOW_GRAY, alpha: 0.2).cgColor
+        layer.borderColor = UIColor(red: SHADOW_SHADE, green: SHADOW_SHADE, blue: SHADOW_SHADE, alpha: 0.2).cgColor
         layer.borderWidth = 1.0
         
     }

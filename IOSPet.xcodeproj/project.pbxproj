@@ -16,6 +16,7 @@
 		A038D8BF1EB3164E00E4440F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A038D8BE1EB3164E00E4440F /* Bolts.framework */; };
 		A038D8C11EB3165400E4440F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A038D8C01EB3165400E4440F /* FBSDKCoreKit.framework */; };
 		A038D8C31EB3165A00E4440F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A038D8C21EB3165A00E4440F /* FBSDKLoginKit.framework */; };
+		A038D8D61EB7C94500E4440F /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038D8D51EB7C94500E4440F /* RoundView.swift */; };
 		A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19D71EAD53100050A3FF /* AppDelegate.swift */; };
 		A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19D91EAD53100050A3FF /* SignInVC.swift */; };
 		A0CD19DD1EAD53100050A3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD19DB1EAD53100050A3FF /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		A038D8C01EB3165400E4440F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		A038D8C21EB3165A00E4440F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		A038D8CF1EB326DC00E4440F /* IOSPet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IOSPet.entitlements; sourceTree = "<group>"; };
+		A038D8D51EB7C94500E4440F /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
 		A0CD19D41EAD53100050A3FF /* IOSPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD19D71EAD53100050A3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CD19D91EAD53100050A3FF /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				A0041F811EAE979700A581A9 /* NicerView.swift */,
 				A0041F861EAE9BC500A581A9 /* RoundBtn.swift */,
 				A038D8B41EB308CD00E4440F /* Textfield.swift */,
+				A038D8D51EB7C94500E4440F /* RoundView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0041F821EAE979700A581A9 /* NicerView.swift in Sources */,
+				A038D8D61EB7C94500E4440F /* RoundView.swift in Sources */,
 				A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */,
 				A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
