@@ -12,14 +12,15 @@ import FBSDKLoginKit
 import FBSDKCoreKit
 import SwiftKeychainWrapper
 
-class SignInVC: UIViewController {
+class SignInVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var EmailField: UITextField!
     @IBOutlet weak var PasswordField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.EmailField.delegate = self
+        self.PasswordField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -90,6 +91,11 @@ class SignInVC: UIViewController {
         let keychainResult = KeychainWrapper.defaultKeychainWrapper.set(id, forKey: KEY_UID)
         print("Data Saved\(keychainResult)")
         performSegue(withIdentifier: "GoHome", sender: nil)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
 }

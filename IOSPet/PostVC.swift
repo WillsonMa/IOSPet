@@ -10,15 +10,17 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var captionField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
+        self.captionField.delegate = self
         // Do any additional setup after loading the view.
     }
 //
@@ -37,8 +39,10 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
     }
-
-  
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     /*
     // MARK: - Navigation
 

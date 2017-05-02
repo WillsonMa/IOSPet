@@ -11,6 +11,7 @@
 		8A2913676972E67DCF30AFA2 /* Pods_IOSPetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2C6DF136FEEFD962457268 /* Pods_IOSPetUITests.framework */; };
 		A0041B641EB93AC10018C775 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041B631EB93AC10018C775 /* PostCell.swift */; };
 		A0041B661EB93D5C0018C775 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041B651EB93D5C0018C775 /* HomeVC.swift */; };
+		A0041B691EB94F2E0018C775 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041B681EB94F2E0018C775 /* DataService.swift */; };
 		A0041F821EAE979700A581A9 /* NicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F811EAE979700A581A9 /* NicerView.swift */; };
 		A0041F851EAE990A00A581A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F841EAE990A00A581A9 /* Constants.swift */; };
 		A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F861EAE9BC500A581A9 /* RoundBtn.swift */; };
@@ -58,6 +59,7 @@
 		9790BB6E039A152EC0D3972F /* Pods-IOSPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPet/Pods-IOSPet.debug.xcconfig"; sourceTree = "<group>"; };
 		A0041B631EB93AC10018C775 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		A0041B651EB93D5C0018C775 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A0041B681EB94F2E0018C775 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A0041F811EAE979700A581A9 /* NicerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicerView.swift; sourceTree = "<group>"; };
 		A0041F841EAE990A00A581A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0041F861EAE9BC500A581A9 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0041B671EB94F160018C775 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0041B681EB94F2E0018C775 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		A0041F831EAE98F300A581A9 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +160,7 @@
 		A0CD19D61EAD53100050A3FF /* IOSPet */ = {
 			isa = PBXGroup;
 			children = (
+				A0041B671EB94F160018C775 /* Services */,
 				A038D8CF1EB326DC00E4440F /* IOSPet.entitlements */,
 				A0041F831EAE98F300A581A9 /* Util */,
 				A0F12EDE1EAD5C0900CCAA86 /* Model */,
@@ -531,6 +542,7 @@
 				A038D8D61EB7C94500E4440F /* RoundView.swift in Sources */,
 				A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */,
 				A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */,
+				A0041B691EB94F2E0018C775 /* DataService.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
 				A0041B641EB93AC10018C775 /* PostCell.swift in Sources */,
 				A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */,

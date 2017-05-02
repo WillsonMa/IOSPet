@@ -245,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="35.532233883058474"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="cEW-vo-owX">
             <objects>
-                <viewController id="2aj-hP-qz2" sceneMemberID="viewController">
+                <viewController title="Search" id="2aj-hP-qz2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jYy-mA-18q"/>
                         <viewControllerLayoutGuide type="bottom" id="kOg-Cc-Kmb"/>
@@ -257,21 +257,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-sk-uWN">
-                                <rect key="frame" x="147" y="535" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="VN9-7l-wJS" kind="show" id="0Ci-YQ-cTQ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzs-nf-EQR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fP-sk-uWN">
+                                        <rect key="frame" x="9" y="21" width="44" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="JRk-rO-BSL"/>
+                                            <constraint firstAttribute="height" constant="37" id="tQt-9g-B7M"/>
+                                        </constraints>
+                                        <state key="normal" image="sign-out"/>
+                                        <connections>
+                                            <segue destination="VN9-7l-wJS" kind="show" id="0Ci-YQ-cTQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="0fP-sk-uWN" firstAttribute="leading" secondItem="Zzs-nf-EQR" secondAttribute="leading" constant="9" id="YkD-iA-IZj"/>
+                                    <constraint firstAttribute="height" constant="66" id="oMH-kc-oGC"/>
+                                    <constraint firstItem="0fP-sk-uWN" firstAttribute="top" secondItem="Zzs-nf-EQR" secondAttribute="top" constant="21" id="zim-xa-2qh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zzs-nf-EQR" firstAttribute="top" secondItem="wsL-ju-uDg" secondAttribute="top" id="RWe-pK-WUy"/>
+                            <constraint firstAttribute="trailing" secondItem="Zzs-nf-EQR" secondAttribute="trailing" id="ZyY-uK-4cB"/>
+                            <constraint firstItem="Zzs-nf-EQR" firstAttribute="leading" secondItem="wsL-ju-uDg" secondAttribute="leading" id="hHR-fr-leP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAp-1k-f12" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="-62"/>
+            <point key="canvasLocation" x="1997.5999999999999" y="-62.518740629685162"/>
         </scene>
         <!--PostVC-->
         <scene sceneID="VQo-wq-G2W">
@@ -439,6 +458,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="caption" destination="MPW-m1-euY" id="7Bl-Al-bmx"/>
+                                            <outlet property="likesCount" destination="ml8-oT-V97" id="oNQ-W3-M9V"/>
+                                            <outlet property="profileImg" destination="rG3-e3-Ckw" id="sA5-HI-dRJ"/>
+                                            <outlet property="psotImg" destination="LJh-yN-3lx" id="8Sl-r7-5B0"/>
+                                            <outlet property="usrname" destination="L6C-ho-Ftx" id="pXq-FO-yKS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -501,6 +527,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="q3B-RB-O0d" id="CAJ-Kf-gg4"/>
                         <outlet property="tableView" destination="Y9g-YP-SuZ" id="icN-b1-ys5"/>
                     </connections>
                 </viewController>
@@ -520,21 +547,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjF-yt-OOk">
-                                <rect key="frame" x="164" y="346" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="VN9-7l-wJS" kind="show" id="fn8-cX-dFn"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyf-77-9Al">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BjF-yt-OOk">
+                                        <rect key="frame" x="9" y="21" width="44" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="9Vw-8Y-lEe"/>
+                                            <constraint firstAttribute="width" constant="44" id="eHx-JJ-ybt"/>
+                                        </constraints>
+                                        <state key="normal" image="sign-out"/>
+                                        <connections>
+                                            <segue destination="VN9-7l-wJS" kind="show" id="fn8-cX-dFn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4ur-IO-Nd0"/>
+                                    <constraint firstItem="BjF-yt-OOk" firstAttribute="top" secondItem="pyf-77-9Al" secondAttribute="top" constant="21" id="5kg-pA-X85"/>
+                                    <constraint firstItem="BjF-yt-OOk" firstAttribute="leading" secondItem="pyf-77-9Al" secondAttribute="leading" constant="9" id="IUC-e7-QJY"/>
+                                    <constraint firstAttribute="height" constant="66" id="yks-wf-MZ8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pyf-77-9Al" firstAttribute="top" secondItem="YP9-cw-x2f" secondAttribute="top" id="B50-fC-1Rv"/>
+                            <constraint firstItem="pyf-77-9Al" firstAttribute="leading" secondItem="YP9-cw-x2f" secondAttribute="leading" id="JWX-JB-7UD"/>
+                            <constraint firstAttribute="trailing" secondItem="pyf-77-9Al" secondAttribute="trailing" id="rru-OT-Wp6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="281-Bs-kBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1998" y="624"/>
+            <point key="canvasLocation" x="1997.5999999999999" y="623.83808095952031"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6cN-6M-tLl">
@@ -548,21 +595,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-Lu-HEQ">
-                                <rect key="frame" x="164" y="203" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="VN9-7l-wJS" kind="show" id="WhN-Kr-6IQ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q49-k5-Miu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg1-Lu-HEQ">
+                                        <rect key="frame" x="9" y="21" width="44" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="ZrA-IB-ueW"/>
+                                            <constraint firstAttribute="width" constant="44" id="hU4-3E-xa7"/>
+                                        </constraints>
+                                        <state key="normal" image="sign-out"/>
+                                        <connections>
+                                            <segue destination="VN9-7l-wJS" kind="show" id="WhN-Kr-6IQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="zg1-Lu-HEQ" firstAttribute="top" secondItem="q49-k5-Miu" secondAttribute="top" constant="21" id="CjC-5R-O5D"/>
+                                    <constraint firstItem="zg1-Lu-HEQ" firstAttribute="leading" secondItem="q49-k5-Miu" secondAttribute="leading" constant="9" id="GiI-Yl-87H"/>
+                                    <constraint firstAttribute="height" constant="66" id="QcK-i8-RCE"/>
+                                    <constraint firstAttribute="width" constant="375" id="uwB-ge-BFF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q49-k5-Miu" firstAttribute="leading" secondItem="wKy-7g-ujs" secondAttribute="leading" id="H3k-om-Phj"/>
+                            <constraint firstAttribute="trailing" secondItem="q49-k5-Miu" secondAttribute="trailing" id="UFY-Vp-zBG"/>
+                            <constraint firstItem="q49-k5-Miu" firstAttribute="top" secondItem="wKy-7g-ujs" secondAttribute="top" id="ouc-5V-56H"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nqx-TG-leK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="1345"/>
+            <point key="canvasLocation" x="2005.5999999999999" y="1344.3778110944529"/>
         </scene>
     </scenes>
     <resources>
@@ -576,6 +643,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hdy-eS-Ocb"/>
+        <segue reference="WhN-Kr-6IQ"/>
     </inferredMetricsTieBreakers>
 </document>
