@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2938976DC91FDDB24BF0FABC /* Pods_IOSPet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD5225BEE2568B5E4B7526F /* Pods_IOSPet.framework */; };
 		8A2913676972E67DCF30AFA2 /* Pods_IOSPetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B2C6DF136FEEFD962457268 /* Pods_IOSPetUITests.framework */; };
+		A0041B641EB93AC10018C775 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041B631EB93AC10018C775 /* PostCell.swift */; };
+		A0041B661EB93D5C0018C775 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041B651EB93D5C0018C775 /* HomeVC.swift */; };
 		A0041F821EAE979700A581A9 /* NicerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F811EAE979700A581A9 /* NicerView.swift */; };
 		A0041F851EAE990A00A581A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F841EAE990A00A581A9 /* Constants.swift */; };
 		A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0041F861EAE9BC500A581A9 /* RoundBtn.swift */; };
@@ -54,6 +56,8 @@
 		4FB517AB847BAC1600C85FA8 /* Pods-IOSPetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetTests/Pods-IOSPetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53EEB12808204C931DE21398 /* Pods-IOSPetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetTests/Pods-IOSPetTests.release.xcconfig"; sourceTree = "<group>"; };
 		9790BB6E039A152EC0D3972F /* Pods-IOSPet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPet/Pods-IOSPet.debug.xcconfig"; sourceTree = "<group>"; };
+		A0041B631EB93AC10018C775 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		A0041B651EB93D5C0018C775 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A0041F811EAE979700A581A9 /* NicerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NicerView.swift; sourceTree = "<group>"; };
 		A0041F841EAE990A00A581A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A0041F861EAE9BC500A581A9 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				A0041F861EAE9BC500A581A9 /* RoundBtn.swift */,
 				A038D8B41EB308CD00E4440F /* Textfield.swift */,
 				A038D8D51EB7C94500E4440F /* RoundView.swift */,
+				A0041B631EB93AC10018C775 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			children = (
 				A0CD19D91EAD53100050A3FF /* SignInVC.swift */,
 				A038D8D71EB8620300E4440F /* PostVC.swift */,
+				A0041B651EB93D5C0018C775 /* HomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -521,10 +527,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0041F821EAE979700A581A9 /* NicerView.swift in Sources */,
+				A0041B661EB93D5C0018C775 /* HomeVC.swift in Sources */,
 				A038D8D61EB7C94500E4440F /* RoundView.swift in Sources */,
 				A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */,
 				A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
+				A0041B641EB93AC10018C775 /* PostCell.swift in Sources */,
 				A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */,
 				A038D8D81EB8620300E4440F /* PostVC.swift in Sources */,
 				A0041F851EAE990A00A581A9 /* Constants.swift in Sources */,
