@@ -492,13 +492,17 @@
                                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="05V-QK-ayO">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="05V-QK-ayO">
                                                 <rect key="frame" x="277" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Lm5-U2-qvD"/>
                                                     <constraint firstAttribute="width" constant="50" id="cVR-R7-5Lc"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="wE7-dC-lC3" appends="YES" id="Loz-pi-64g"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -528,10 +532,16 @@
                     </view>
                     <connections>
                         <outlet property="captionField" destination="q3B-RB-O0d" id="CAJ-Kf-gg4"/>
+                        <outlet property="imageUpload" destination="05V-QK-ayO" id="0Ix-np-Kfp"/>
                         <outlet property="tableView" destination="Y9g-YP-SuZ" id="icN-b1-ys5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tV-sy-KC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wE7-dC-lC3">
+                    <connections>
+                        <action selector="uploadImage:" destination="L7e-cB-gv2" id="yaS-qq-3LG"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1997.5999999999999" y="-770.46476761619192"/>
         </scene>
@@ -715,6 +725,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WhN-Kr-6IQ"/>
+        <segue reference="hdy-eS-Ocb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,12 +10,14 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var captionField: UITextField!
+    @IBOutlet weak var imageUpload: UIImageView!
     
     var posts = [Post]()
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,10 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         tableView.delegate = self
         tableView.dataSource = self
         self.captionField.delegate = self
+        
+        imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = true
+        imagePicker.delegate = self
         
         DataService.ds.REF_POSTS.observe(.value, with:  {(snapshot) in
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
@@ -41,11 +47,11 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         // Do any additional setup after loading the view.
     }
 //
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -68,6 +74,20 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
+            imageUpload.image = image
+        } else {
+            print("No valid image")
+        }
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func uploadImage(_ sender: AnyObject) {
+        present(imagePicker, animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
