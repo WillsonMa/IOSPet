@@ -29,6 +29,9 @@
 		A0CD19ED1EAD53100050A3FF /* IOSPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19EC1EAD53100050A3FF /* IOSPetTests.swift */; };
 		A0CD19F81EAD53110050A3FF /* IOSPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19F71EAD53110050A3FF /* IOSPetUITests.swift */; };
 		A0CD1A061EAD55360050A3FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0CD1A051EAD55360050A3FF /* GoogleService-Info.plist */; };
+		A0D608D81EB95CBB009792CB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608D71EB95CBB009792CB /* ChannelVC.swift */; };
+		A0D608DA1EB95E62009792CB /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608D91EB95E62009792CB /* CreateChannelCell.swift */; };
+		A0D608DC1EB960C4009792CB /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608DB1EB960C4009792CB /* Channel.swift */; };
 		D6AEB7056E4C70F20CA10F24 /* Pods_IOSPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39261824B7A83C59F109B3DA /* Pods_IOSPetTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		A0CD19F71EAD53110050A3FF /* IOSPetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSPetUITests.swift; sourceTree = "<group>"; };
 		A0CD19F91EAD53110050A3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CD1A051EAD55360050A3FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A0D608D71EB95CBB009792CB /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		A0D608D91EB95E62009792CB /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
+		A0D608DB1EB960C4009792CB /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		BAF87CBE4FC2BC0693C146B5 /* Pods-IOSPetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3FFDC19F6921E2AE612FB46 /* Pods-IOSPetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +203,7 @@
 		A0F12EDE1EAD5C0900CCAA86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0D608DB1EB960C4009792CB /* Channel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -209,6 +216,7 @@
 				A038D8B41EB308CD00E4440F /* Textfield.swift */,
 				A038D8D51EB7C94500E4440F /* RoundView.swift */,
 				A0041B631EB93AC10018C775 /* PostCell.swift */,
+				A0D608D91EB95E62009792CB /* CreateChannelCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 				A0CD19D91EAD53100050A3FF /* SignInVC.swift */,
 				A038D8D71EB8620300E4440F /* PostVC.swift */,
 				A0041B651EB93D5C0018C775 /* HomeVC.swift */,
+				A0D608D71EB95CBB009792CB /* ChannelVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -541,7 +550,10 @@
 				A0041B661EB93D5C0018C775 /* HomeVC.swift in Sources */,
 				A038D8D61EB7C94500E4440F /* RoundView.swift in Sources */,
 				A038D8B51EB308CD00E4440F /* Textfield.swift in Sources */,
+				A0D608D81EB95CBB009792CB /* ChannelVC.swift in Sources */,
 				A0041F871EAE9BC500A581A9 /* RoundBtn.swift in Sources */,
+				A0D608DA1EB95E62009792CB /* CreateChannelCell.swift in Sources */,
+				A0D608DC1EB960C4009792CB /* Channel.swift in Sources */,
 				A0041B691EB94F2E0018C775 /* DataService.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
 				A0041B641EB93AC10018C775 /* PostCell.swift in Sources */,

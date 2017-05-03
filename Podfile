@@ -12,6 +12,7 @@ target 'IOSPet' do
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
   pod 'SwiftKeychainWrapper'
+  pod 'JSQMessagesViewController'
   
   target 'IOSPetTests' do
     inherit! :search_paths

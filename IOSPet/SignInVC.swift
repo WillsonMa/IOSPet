@@ -59,7 +59,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             } else {
                 print("Successfully authenticated with Firebase")
                 if let user = user {
-                    self.finishSignIn(id: user.uid)
+                    let userData = ["method": credential.provider]
+                    self.finishSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -70,7 +71,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                 if error == nil {
                     print("Email User authenticated with Firebase Successfully")
                     if let user = user {
-                        self.finishSignIn(id: user.uid)
+                        let userData = ["method": user.providerID]
+                        self.finishSignIn(id: user.uid, userData: userData)
                     }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: {(user, error) in
@@ -79,7 +81,8 @@ class SignInVC: UIViewController, UITextFieldDelegate {
                     } else {
                         print("Successfully authenticated with Firebase")
                             if let user = user {
-                                self.finishSignIn(id: user.uid)
+                                let userData = ["method": user.providerID]
+                                self.finishSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -87,7 +90,10 @@ class SignInVC: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    func finishSignIn(id: String) {
+    
+    
+    func finishSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.defaultKeychainWrapper.set(id, forKey: KEY_UID)
         print("Data Saved\(keychainResult)")
         performSegue(withIdentifier: "GoHome", sender: nil)
