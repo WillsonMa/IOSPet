@@ -32,6 +32,7 @@
 		A0D608D81EB95CBB009792CB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608D71EB95CBB009792CB /* ChannelVC.swift */; };
 		A0D608DA1EB95E62009792CB /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608D91EB95E62009792CB /* CreateChannelCell.swift */; };
 		A0D608DC1EB960C4009792CB /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608DB1EB960C4009792CB /* Channel.swift */; };
+		A0D608DE1EB9D085009792CB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608DD1EB9D085009792CB /* Post.swift */; };
 		D6AEB7056E4C70F20CA10F24 /* Pods_IOSPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39261824B7A83C59F109B3DA /* Pods_IOSPetTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		A0D608D71EB95CBB009792CB /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		A0D608D91EB95E62009792CB /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
 		A0D608DB1EB960C4009792CB /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		A0D608DD1EB9D085009792CB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BAF87CBE4FC2BC0693C146B5 /* Pods-IOSPetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3FFDC19F6921E2AE612FB46 /* Pods-IOSPetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D608DB1EB960C4009792CB /* Channel.swift */,
+				A0D608DD1EB9D085009792CB /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				A0D608DA1EB95E62009792CB /* CreateChannelCell.swift in Sources */,
 				A0D608DC1EB960C4009792CB /* Channel.swift in Sources */,
 				A0041B691EB94F2E0018C775 /* DataService.swift in Sources */,
+				A0D608DE1EB9D085009792CB /* Post.swift in Sources */,
 				A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */,
 				A0041B641EB93AC10018C775 /* PostCell.swift in Sources */,
 				A0CD19D81EAD53100050A3FF /* AppDelegate.swift in Sources */,
