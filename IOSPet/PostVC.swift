@@ -18,6 +18,9 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    //Gloable variable
+    static var imgCache: NSCache<NSString, UIImage> = NSCache()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +68,13 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier:"PostCell") as? PostCell {
-            cell.configureCell(post: post)
-            return cell
+            if let img = PostVC.imgCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
         } else {
             return PostCell()
         }

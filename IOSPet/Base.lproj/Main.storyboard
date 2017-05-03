@@ -461,8 +461,8 @@
                                         <connections>
                                             <outlet property="caption" destination="MPW-m1-euY" id="7Bl-Al-bmx"/>
                                             <outlet property="likesCount" destination="ml8-oT-V97" id="oNQ-W3-M9V"/>
+                                            <outlet property="postImg" destination="LJh-yN-3lx" id="xAS-rH-F7R"/>
                                             <outlet property="profileImg" destination="rG3-e3-Ckw" id="sA5-HI-dRJ"/>
-                                            <outlet property="psotImg" destination="LJh-yN-3lx" id="8Sl-r7-5B0"/>
                                             <outlet property="usrname" destination="L6C-ho-Ftx" id="pXq-FO-yKS"/>
                                         </connections>
                                     </tableViewCell>
