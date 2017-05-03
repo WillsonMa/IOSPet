@@ -279,11 +279,24 @@
                                     <constraint firstItem="0fP-sk-uWN" firstAttribute="top" secondItem="Zzs-nf-EQR" secondAttribute="top" constant="21" id="zim-xa-2qh"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUNCTION UNDER CONSTRUCTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4C-Qo-nFg">
+                                <rect key="frame" x="87" y="275" width="200" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="FfP-ST-vN1"/>
+                                    <constraint firstAttribute="height" constant="116" id="KVy-Rw-b5A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="B4C-Qo-nFg" firstAttribute="leading" secondItem="wsL-ju-uDg" secondAttribute="leadingMargin" constant="71" id="FR2-eI-nEx"/>
+                            <constraint firstItem="B4C-Qo-nFg" firstAttribute="top" secondItem="Zzs-nf-EQR" secondAttribute="bottom" constant="209" id="HRV-fF-ZkF"/>
                             <constraint firstItem="Zzs-nf-EQR" firstAttribute="top" secondItem="wsL-ju-uDg" secondAttribute="top" id="RWe-pK-WUy"/>
                             <constraint firstAttribute="trailing" secondItem="Zzs-nf-EQR" secondAttribute="trailing" id="ZyY-uK-4cB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B4C-Qo-nFg" secondAttribute="trailing" constant="72" id="god-Kx-zpJ"/>
                             <constraint firstItem="Zzs-nf-EQR" firstAttribute="leading" secondItem="wsL-ju-uDg" secondAttribute="leading" id="hHR-fr-leP"/>
                         </constraints>
                     </view>
@@ -484,6 +497,9 @@
                                                 <state key="normal" title="Button" image="add-post">
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="postNew:" destination="L7e-cB-gv2" eventType="touchUpInside" id="PvU-Ct-f77"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What you wanna say!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3B-RB-O0d">
                                                 <rect key="frame" x="50" y="0.0" width="227" height="50"/>
@@ -725,6 +741,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hdy-eS-Ocb"/>
+        <segue reference="fn8-cX-dFn"/>
     </inferredMetricsTieBreakers>
 </document>

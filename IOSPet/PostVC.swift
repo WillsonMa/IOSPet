@@ -97,6 +97,32 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     @IBAction func uploadImage(_ sender: AnyObject) {
         present(imagePicker, animated: true, completion: nil)
     }
+    @IBAction func postNew(_ sender: Any) {
+        guard let caption = captionField.text, caption != "" else {
+            print("Will: Caption need to be entered")
+            return
+        }
+        guard let img = imageUpload.image else {
+            print("Will: Image need to be selected")
+            return
+        }
+        
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            let imgUid = NSUUID().uuidString
+            let mtdata = FIRStorageMetadata()
+            mtdata.contentType = "image/jpeg"
+            
+            DataService.ds.REF_POST_IMG.child(imgUid).put(imgData, metadata: mtdata) { (mtdata, error) in
+                if error != nil {
+                    print("Will: Failed to upload image to fir storage")
+                } else {
+                    print("Will: Succesfully uploaded image to fir storage")
+                    let downloadURL = mtdata?.downloadURL()?.absoluteString
+                }
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
