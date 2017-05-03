@@ -21,6 +21,10 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
         tableView.delegate = self
         tableView.dataSource = self
         self.captionField.delegate = self
+        
+        DataService.ds.REF_POSTS.observe(.value, with:  {(snapshot) in
+            print(snapshot.value)
+        })
         // Do any additional setup after loading the view.
     }
 //
