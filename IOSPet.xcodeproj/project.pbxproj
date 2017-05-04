@@ -25,7 +25,6 @@
 		A0CD19DA1EAD53100050A3FF /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19D91EAD53100050A3FF /* SignInVC.swift */; };
 		A0CD19DD1EAD53100050A3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD19DB1EAD53100050A3FF /* Main.storyboard */; };
 		A0CD19DF1EAD53100050A3FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0CD19DE1EAD53100050A3FF /* Assets.xcassets */; };
-		A0CD19E21EAD53100050A3FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CD19E01EAD53100050A3FF /* LaunchScreen.storyboard */; };
 		A0CD19ED1EAD53100050A3FF /* IOSPetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19EC1EAD53100050A3FF /* IOSPetTests.swift */; };
 		A0CD19F81EAD53110050A3FF /* IOSPetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD19F71EAD53110050A3FF /* IOSPetUITests.swift */; };
 		A0CD1A061EAD55360050A3FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0CD1A051EAD55360050A3FF /* GoogleService-Info.plist */; };
@@ -33,6 +32,7 @@
 		A0D608DA1EB95E62009792CB /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608D91EB95E62009792CB /* CreateChannelCell.swift */; };
 		A0D608DC1EB960C4009792CB /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608DB1EB960C4009792CB /* Channel.swift */; };
 		A0D608DE1EB9D085009792CB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D608DD1EB9D085009792CB /* Post.swift */; };
+		A0D608E01EBAAF2E009792CB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D608DF1EBAAF2E009792CB /* Launch Screen.storyboard */; };
 		D6AEB7056E4C70F20CA10F24 /* Pods_IOSPetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39261824B7A83C59F109B3DA /* Pods_IOSPetTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +79,6 @@
 		A0CD19D91EAD53100050A3FF /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		A0CD19DC1EAD53100050A3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0CD19DE1EAD53100050A3FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0CD19E11EAD53100050A3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0CD19E31EAD53100050A3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CD19E81EAD53100050A3FF /* IOSPetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSPetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CD19EC1EAD53100050A3FF /* IOSPetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSPetTests.swift; sourceTree = "<group>"; };
@@ -92,6 +91,7 @@
 		A0D608D91EB95E62009792CB /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
 		A0D608DB1EB960C4009792CB /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		A0D608DD1EB9D085009792CB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A0D608DF1EBAAF2E009792CB /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BAF87CBE4FC2BC0693C146B5 /* Pods-IOSPetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3FFDC19F6921E2AE612FB46 /* Pods-IOSPetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSPetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSPetUITests/Pods-IOSPetUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,7 +177,7 @@
 				A0CD19D71EAD53100050A3FF /* AppDelegate.swift */,
 				A0CD19DB1EAD53100050A3FF /* Main.storyboard */,
 				A0CD19DE1EAD53100050A3FF /* Assets.xcassets */,
-				A0CD19E01EAD53100050A3FF /* LaunchScreen.storyboard */,
+				A0D608DF1EBAAF2E009792CB /* Launch Screen.storyboard */,
 				A0CD19E31EAD53100050A3FF /* Info.plist */,
 				A0CD1A051EAD55360050A3FF /* GoogleService-Info.plist */,
 			);
@@ -383,9 +383,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CD19E21EAD53100050A3FF /* LaunchScreen.storyboard in Resources */,
 				A0CD1A061EAD55360050A3FF /* GoogleService-Info.plist in Resources */,
 				A0CD19DF1EAD53100050A3FF /* Assets.xcassets in Resources */,
+				A0D608E01EBAAF2E009792CB /* Launch Screen.storyboard in Resources */,
 				A0CD19DD1EAD53100050A3FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,14 +607,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A0CD19E01EAD53100050A3FF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0CD19E11EAD53100050A3FF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -718,6 +710,7 @@
 			baseConfigurationReference = 9790BB6E039A152EC0D3972F /* Pods-IOSPet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = IOSPet/IOSPet.entitlements;
 				DEVELOPMENT_TEAM = TSRT7TBAQJ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -745,6 +738,7 @@
 			baseConfigurationReference = 1628BF1C7EC1ABDBECC07401 /* Pods-IOSPet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = IOSPet/IOSPet.entitlements;
 				DEVELOPMENT_TEAM = TSRT7TBAQJ;
 				FRAMEWORK_SEARCH_PATHS = (
