@@ -371,7 +371,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o8-5N-AMU">
                                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="58"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="rG3-e3-Ckw">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="rG3-e3-Ckw" customClass="RoundView" customModule="IOSPet" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="58" height="58"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="58" id="LNJ-DP-4iA"/>
@@ -386,7 +386,7 @@
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="y73-Qc-Jdl">
                                                                             <rect key="frame" x="284" y="0.0" width="59" height="58"/>
-                                                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="59" id="FQg-0Z-q4y"/>
                                                                                 <constraint firstAttribute="height" constant="58" id="Jgq-Qx-VsU"/>
@@ -406,7 +406,7 @@
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="THIS IS AN AWESOME APP!!!! I LOVE IT SO MUCH!!!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-m1-euY">
                                                                     <rect key="frame" x="0.0" y="238" width="343" height="60"/>
-                                                                    <color key="backgroundColor" red="0.97306315104166663" green="0.88536241319444442" blue="0.95364040798611116" alpha="0.42661065924657532" colorSpace="calibratedRGB"/>
+                                                                    <color key="backgroundColor" red="0.97306315104166663" green="0.88536241319444442" blue="0.95364040798611116" alpha="0.0" colorSpace="calibratedRGB"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="60" id="xuR-nQ-vOc"/>
                                                                     </constraints>
@@ -473,6 +473,7 @@
                                         <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="caption" destination="MPW-m1-euY" id="7Bl-Al-bmx"/>
+                                            <outlet property="likeImg" destination="y73-Qc-Jdl" id="Ni4-gT-BW6"/>
                                             <outlet property="likesCount" destination="ml8-oT-V97" id="oNQ-W3-M9V"/>
                                             <outlet property="postImg" destination="LJh-yN-3lx" id="xAS-rH-F7R"/>
                                             <outlet property="profileImg" destination="rG3-e3-Ckw" id="sA5-HI-dRJ"/>
@@ -767,6 +768,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WhN-Kr-6IQ"/>
+        <segue reference="hdy-eS-Ocb"/>
     </inferredMetricsTieBreakers>
 </document>

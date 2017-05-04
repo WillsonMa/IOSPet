@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundView: UIView {
+class RoundView: UIImageView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -28,7 +28,7 @@ class RoundView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        layer.cornerRadius = self.frame.width / 2.2
+        layer.cornerRadius = self.frame.width / 2
     }
 
 
