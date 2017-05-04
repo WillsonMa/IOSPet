@@ -18,6 +18,7 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    var imageSelected = false
     //Gloable variable
     static var imgCache: NSCache<NSString, UIImage> = NSCache()
     
@@ -87,6 +88,7 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageUpload.image = image
+            imageSelected = true
         } else {
             print("No valid image")
         }
@@ -102,7 +104,7 @@ class PostVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UITe
             print("Will: Caption need to be entered")
             return
         }
-        guard let img = imageUpload.image else {
+        guard let img = imageUpload.image, imageSelected == true else {
             print("Will: Image need to be selected")
             return
         }

@@ -596,12 +596,25 @@
                                     <constraint firstAttribute="height" constant="66" id="yks-wf-MZ8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUNCTION UNDER CONSTRUCTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-X3-kbZ">
+                                <rect key="frame" x="87" y="275" width="200" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Aw9-Yy-ZyT"/>
+                                    <constraint firstAttribute="height" constant="116" id="eKm-Dk-4Jx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pyf-77-9Al" firstAttribute="top" secondItem="YP9-cw-x2f" secondAttribute="top" id="B50-fC-1Rv"/>
                             <constraint firstItem="pyf-77-9Al" firstAttribute="leading" secondItem="YP9-cw-x2f" secondAttribute="leading" id="JWX-JB-7UD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Otc-X3-kbZ" secondAttribute="trailing" constant="72" id="X1H-tv-DWp"/>
                             <constraint firstAttribute="trailing" secondItem="pyf-77-9Al" secondAttribute="trailing" id="rru-OT-Wp6"/>
+                            <constraint firstItem="Otc-X3-kbZ" firstAttribute="top" secondItem="pyf-77-9Al" secondAttribute="bottom" constant="209" id="upI-LA-763"/>
+                            <constraint firstItem="Otc-X3-kbZ" firstAttribute="leading" secondItem="YP9-cw-x2f" secondAttribute="leadingMargin" constant="71" id="yud-er-wTX"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -635,12 +648,25 @@
                                             <segue destination="VN9-7l-wJS" kind="show" id="WhN-Kr-6IQ"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUNCTION UNDER CONSTRUCTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEv-Th-I1E">
+                                        <rect key="frame" x="61" y="17" width="314" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="I96-sQ-NcI"/>
+                                            <constraint firstAttribute="width" constant="314" id="nFJ-Dz-m27"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="zg1-Lu-HEQ" firstAttribute="top" secondItem="q49-k5-Miu" secondAttribute="top" constant="21" id="CjC-5R-O5D"/>
                                     <constraint firstItem="zg1-Lu-HEQ" firstAttribute="leading" secondItem="q49-k5-Miu" secondAttribute="leading" constant="9" id="GiI-Yl-87H"/>
+                                    <constraint firstAttribute="bottom" secondItem="fEv-Th-I1E" secondAttribute="bottom" constant="5" id="Ic3-dm-AGp"/>
+                                    <constraint firstItem="fEv-Th-I1E" firstAttribute="top" secondItem="q49-k5-Miu" secondAttribute="top" constant="17" id="Nd1-GJ-SVs"/>
                                     <constraint firstAttribute="height" constant="66" id="QcK-i8-RCE"/>
+                                    <constraint firstAttribute="trailing" secondItem="fEv-Th-I1E" secondAttribute="trailing" id="X0l-rp-tGa"/>
                                     <constraint firstAttribute="width" constant="375" id="uwB-ge-BFF"/>
                                 </constraints>
                             </view>
@@ -741,6 +767,6 @@
         <image name="sign-out" width="92" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fn8-cX-dFn"/>
+        <segue reference="WhN-Kr-6IQ"/>
     </inferredMetricsTieBreakers>
 </document>
